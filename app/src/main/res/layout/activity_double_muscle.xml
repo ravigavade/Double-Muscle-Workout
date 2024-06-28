@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    tools:context=".DoubleMuscle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+<!--            monday...1st -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="back and biceps"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/back1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/back2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/back3"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/biceps1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/biceps2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/biceps3"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+<!--            tuesday...2nd-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chest and Triceps"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/flies"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/chest2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/chest1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/triceps1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/triceps2"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+<!--            wednesday..3rd-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Legs"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/legs1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/legs2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/legs3"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            thursday-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shoulders and ABS"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/shoulders1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/shoulders2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/shoulders3"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/abs1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/abs2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/abs3"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            Friday-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cardio/Yoga"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/cardio1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/cardio2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/cardio3"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            saturday-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full body/Compound exercises"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="200dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/fullbody1"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/fullbody2"/>
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                android:src="@drawable/fullbody3"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            sunday-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rest/Sex hehe..."
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/poppins"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
