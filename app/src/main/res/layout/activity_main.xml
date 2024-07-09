@@ -5,62 +5,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:background="@color/white"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant"
     tools:context=".MainActivity">
 
     <ImageView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="260dp"
-        android:src="@drawable/imgg"/>
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg1" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
         android:gravity="center"
+        android:paddingHorizontal="9dp"
         android:text="JimVim"
+        android:textColor="@color/black"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins" />
 
 
-    <Button
-        android:id="@+id/noEbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No equipment - full body"
-        android:fontFamily="@font/poppins"
-        android:layout_margin="10dp"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="4dp">
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/noEbtn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp">
 
-    <Button
-        android:id="@+id/fivemintotbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="5 mins total abs workout"
-        android:layout_margin="10dp"/>
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/moe" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="9dp"
+                    android:text="No equipment - full body"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/doubleMusclebtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Double muscle(with equipments)"
-        android:fontFamily="@font/poppins"
-        android:layout_margin="10dp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fivemintotbtn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp">
 
-    <Button
-        android:id="@+id/aboutbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins"
-        android:text="about"
-        android:layout_margin="10dp"/>
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/abs1" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="9dp"
+                    android:text="5 mins total abs workout"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/doubleMusclebtn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="9dp"
+                    android:text="Double muscle"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aboutbtn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/about" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="9dp"
+                    android:text="About"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins" />
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
 
 
 </LinearLayout>

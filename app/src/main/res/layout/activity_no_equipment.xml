@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/radiant1"
     tools:context=".noEquipment">
 
     <ScrollView
@@ -26,6 +27,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ARM CIRCLES"
@@ -34,6 +36,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 12 reps"/>
@@ -53,6 +56,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
+                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
                     android:text="HIGH KNEE SKIPS"
                     android:fontFamily="@font/poppins"
@@ -60,6 +64,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 12 reps"/>
@@ -78,6 +83,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MOUNTAIN CLIMBER"
@@ -86,6 +92,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 12 reps"/>
@@ -104,6 +111,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PUSH-UP"
@@ -112,6 +120,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4 sets, 12 reps"/>
@@ -130,6 +139,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BODYWEIGHT SUMO SQUAT"
@@ -138,6 +148,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 15 reps"/>
@@ -156,6 +167,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BODYWEIGHT WINDMILL"
@@ -164,6 +176,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 12 reps"/>
@@ -182,6 +195,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="WALL SLIDES"
@@ -190,6 +204,7 @@
                     android:textSize="20sp"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3 sets, 12 reps"/>
@@ -208,6 +223,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ACROSS CHEST SHOULDER STRETCH"
@@ -229,6 +245,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="STANDING REACH UP BACK ROTATION STRETCH"
@@ -250,6 +267,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="STANDING REVERSE SHOULDER STRETCH"
@@ -271,6 +289,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BACK PEC STRETCH"
@@ -292,6 +311,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="STANDING CROSS LEG HAMSTRING STRETCH"
@@ -313,6 +333,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="KNEELING HIP FLEXOR STRETCH"

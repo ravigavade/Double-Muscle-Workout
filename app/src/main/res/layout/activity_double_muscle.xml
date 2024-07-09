@@ -7,12 +7,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="10dp"
+    android:background="@drawable/radiant1"
     tools:context=".DoubleMuscle">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:scrollbars="none"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -20,20 +21,23 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
 
-<!--            monday...1st -->
+            <!-- Monday...1st -->
             <LinearLayout
+                android:layout_marginBottom="9dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Monday"
+                    android:textColor="@color/black"
+                    android:text="Day 1"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
                 <TextView
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
                     android:text="back and biceps"
                     android:textSize="12sp"
@@ -46,6 +50,7 @@
                     android:layout_height="200dp">
 
                     <HorizontalScrollView
+                        android:scrollbars="none"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -53,41 +58,77 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/back1"/>
+                                app:cardCornerRadius="16dp"> <!-- Adjust the radius as needed -->
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/back2"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/back1"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/back3"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/biceps1"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/back2"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/biceps2"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/back3"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/biceps3"/>
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/biceps1"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/biceps2"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/biceps3"/>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
 
@@ -97,21 +138,22 @@
 
             </LinearLayout>
 
-
-
-<!--            tuesday...2nd-->
+            <!-- Tuesday...2nd -->
             <LinearLayout
+                android:layout_marginBottom="9dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tuesday"
+                    android:text="Day 2"
                     android:textSize="20sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Chest and Triceps"
@@ -125,6 +167,8 @@
                     android:layout_height="200dp">
 
                     <HorizontalScrollView
+                        android:scrollbars="none"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -132,55 +176,86 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/flies"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/chest2"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/flies"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/chest1"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/triceps1"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/chest2"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/triceps2"/>
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/chest1"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/triceps1"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/triceps2"/>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             </LinearLayout>
 
-
-<!--            wednesday..3rd-->
+            <!-- Wednesday...3rd -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
-                    android:text="Wednesday"
+                    android:text="Day 3"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Legs"
@@ -194,6 +269,8 @@
                     android:layout_height="200dp">
 
                     <HorizontalScrollView
+                        android:scrollbars="none"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -201,45 +278,66 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/legs1"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/legs2"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs1"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/legs3"/>
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs2"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs3"/>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             </LinearLayout>
 
-<!--            thursday-->
+            <!-- Thursday...4th -->
             <LinearLayout
+                android:layout_marginBottom="9dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Thursday"
+                    android:text="Day 4"
                     android:textSize="20sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shoulders and ABS"
+                    android:text="Shoulders and Abs"
                     android:textSize="12sp"
                     android:textStyle="italic"
                     android:fontFamily="@font/poppins"/>
@@ -250,6 +348,7 @@
                     android:layout_height="200dp">
 
                     <HorizontalScrollView
+                        android:scrollbars="none"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -257,63 +356,90 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/shoulders1"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/shoulders2"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/shoulders1"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/shoulders3"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/abs1"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/shoulders2"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/abs2"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/shoulders3"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/abs3"/>
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/abs1"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/abs2"/>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             </LinearLayout>
 
-<!--            Friday-->
+            <!-- Friday...5th -->
             <LinearLayout
+                android:layout_marginBottom="9dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Friday"
+                    android:text="Day 5"
                     android:textSize="20sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"/>
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cardio/Yoga"
+                    android:text="Legs"
                     android:textSize="12sp"
                     android:textStyle="italic"
                     android:fontFamily="@font/poppins"/>
@@ -324,6 +450,7 @@
                     android:layout_height="200dp">
 
                     <HorizontalScrollView
+                        android:scrollbars="none"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -331,112 +458,46 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/cardio1"/>
+                                app:cardCornerRadius="16dp">
 
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/cardio2"/>
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs1"/>
+                            </androidx.cardview.widget.CardView>
 
-                            <pl.droidsonroids.gif.GifImageView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
                                 android:layout_margin="1dp"
-                                android:src="@drawable/cardio3"/>
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs2"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="1dp"
+                                app:cardCornerRadius="16dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/legs3"/>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
                     </HorizontalScrollView>
                 </LinearLayout>
             </LinearLayout>
-
-<!--            saturday-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Saturday"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Full body/Compound exercises"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="200dp">
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/fullbody1"/>
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/fullbody2"/>
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                android:src="@drawable/fullbody3"/>
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </LinearLayout>
-            </LinearLayout>
-
-<!--            sunday-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sunday"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Rest/Sex hehe..."
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
-
-
-            </LinearLayout>
-
-
-
-
-
 
         </LinearLayout>
 
