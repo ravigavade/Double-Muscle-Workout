@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/radiant1"
+    android:padding="20dp"
+    android:background="@color/black"
     tools:context=".DoubleMuscle">
 
     <ScrollView
@@ -27,22 +28,22 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="Day 1"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"
-                    android:text="back and biceps"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 1: back and biceps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -55,14 +56,15 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
+
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <androidx.cardview.widget.CardView
+                                android:layout_marginHorizontal="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
-                                app:cardCornerRadius="16dp"> <!-- Adjust the radius as needed -->
+                                app:cardCornerRadius="20dp">
 
                                 <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="match_parent"
@@ -71,9 +73,9 @@
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
+                                android:layout_marginHorizontal="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -83,9 +85,9 @@
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
+                                android:layout_marginHorizontal="5dp"
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -97,7 +99,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -109,19 +111,20 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+
                                     android:src="@drawable/biceps2"/>
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -144,22 +147,22 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Day 2"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:textColor="@color/black"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Chest and Triceps"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 2: Chest and Triceps"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -179,7 +182,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -191,7 +194,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -203,7 +206,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -215,7 +218,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -227,7 +230,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -246,22 +249,23 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"
-                    android:text="Day 3"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:textColor="@color/black"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Legs"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 3: Legs"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -281,7 +285,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -293,7 +297,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -305,7 +309,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -325,22 +329,22 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Day 4"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:textColor="@color/black"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Shoulders and Abs"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 4: Shoulders and Abs"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -359,7 +363,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -370,8 +374,8 @@
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
+                                android:layout_marginHorizontal="5dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -383,7 +387,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -395,7 +399,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -407,7 +411,7 @@
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
@@ -427,22 +431,47 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <TextView
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Day 5"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppins"/>
-                <TextView
-                    android:textColor="@color/black"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 5: Rest"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Friday...5th -->
+            <LinearLayout
+                android:layout_marginBottom="9dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="9dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Legs"
-                    android:textSize="12sp"
-                    android:textStyle="italic"
-                    android:fontFamily="@font/poppins"/>
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Day 6: Full Body "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/audiowide"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -467,40 +496,78 @@
                                 <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/legs1"/>
+                                    android:src="@drawable/fullbody1"/>
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/legs2"/>
+                                    android:src="@drawable/fullbody2"/>
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:layout_margin="1dp"
+                                android:layout_marginHorizontal="5dp"
                                 app:cardCornerRadius="16dp">
 
                                 <pl.droidsonroids.gif.GifImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/legs3"/>
+                                    android:src="@drawable/fullbody3"/>
                             </androidx.cardview.widget.CardView>
+
+
 
                         </LinearLayout>
+
+
+
+
                     </HorizontalScrollView>
+
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="9dp"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Day 7: Rest"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/audiowide"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
             </LinearLayout>
+
+
+
+
+
 
         </LinearLayout>
 
+
     </ScrollView>
+
 
 </LinearLayout>

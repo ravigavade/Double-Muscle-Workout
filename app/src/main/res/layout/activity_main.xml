@@ -7,41 +7,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradiant"
+    android:background="@color/black"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="260dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/bg1" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:fontFamily="@font/audiowide"
         android:gravity="center"
         android:paddingHorizontal="9dp"
-        android:text="JimVim"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/poppins" />
+        android:text="Hustle for the muscle!"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="29dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="250dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/titleimg" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="9dp"
+            android:text="JimVim"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:fontFamily="@font/audiowide" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
 
         <GridLayout
+            android:layout_marginVertical="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
             android:columnCount="2"
             android:rowCount="2"
             android:padding="4dp">
+
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/noEbtn"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_margin="10dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="16dp">
@@ -66,7 +99,7 @@
                 android:id="@+id/fivemintotbtn"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_margin="10dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="16dp">
@@ -91,7 +124,7 @@
                 android:id="@+id/doubleMusclebtn"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_margin="10dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="16dp">
@@ -116,7 +149,7 @@
                 android:id="@+id/aboutbtn"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_margin="10dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="16dp">
