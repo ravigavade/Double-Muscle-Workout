@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812844935680",
+    "project_id": "jimvim-1aeb9",
+    "storage_bucket": "jimvim-1aeb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812844935680:android:c4f497441af3ddaecb86e5",
+        "android_client_info": {
+          "package_name": "com.example.jimjam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNKAdwFOxA_wMqXO8uoCqYve-4dOR2onk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
