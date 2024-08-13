@@ -20,22 +20,33 @@ class LoginAvitivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding=ActivityLoginAvitivityBinding.inflate(layoutInflater)
+        binding = ActivityLoginAvitivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = Firebase.auth
 
+        // Check if the user is already signed in
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish() // Finish the current activity so that the user cannot return to the login screen by pressing back
+            return
+        }
 
         binding.continueBtn.setOnClickListener {
-            auth.signInWithEmailAndPassword(binding.mail.getText().toString().trim() , binding.password.getText().toString().trim() )
+            val email = binding.mail.text.toString().trim()
+            val password = binding.password.text.toString().trim()
+
+            auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
+                        // Sign in success
                         Log.d(TAG, "signInWithEmail:success")
                         val user = auth.currentUser
-                        startActivity(Intent(this,MainActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish() // Finish the login activity so the user cannot go back to it
                     } else {
-                        // If sign in fails, display a message to the user.
+                        // Sign in fails
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(
                             baseContext,
@@ -46,13 +57,11 @@ class LoginAvitivity : AppCompatActivity() {
                 }
         }
 
-        binding.move.setOnClickListener{
-            startActivity(Intent(this,RegisterActivity::class.java))
+        binding.move.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
-
-
-
     }
+
 
     public override fun onStart() {
         super.onStart()
