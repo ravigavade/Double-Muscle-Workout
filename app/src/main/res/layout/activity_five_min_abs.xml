@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
-            android:padding="10dp"
             android:orientation="horizontal">
 
             <!-- Exercise 1: Crunches -->
@@ -32,9 +31,10 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8sdp"
                     android:backgroundTint="@color/white"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="20dp"
+
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -87,7 +87,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="20dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -140,7 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="8dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -193,7 +195,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="8dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -246,7 +249,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="8dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -299,7 +303,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:cardCornerRadius="8dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout

@@ -2,5 +2,15 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/audiowide</item>
+        <item>@font/bangers</item>
+        <item>@font/bruno_ace_sc</item>
+        <item>@font/bungee</item>
+        <item>@font/comforter_brush</item>
+        <item>@font/dm_serif_text</item>
+        <item>@font/edu_nsw_act_foundation</item>
+        <item>@font/fugaz_one</item>
+        <item>@font/plaster</item>
+        <item>@font/the_girl_next_door</item>
+        <item>@font/zen_dots</item>
     </array>
 </resources>

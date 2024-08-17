@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C7C2C2"
+    android:background="#7D7979"
     tools:context=".noEquipment">
 
     <ScrollView
@@ -18,20 +18,21 @@
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="@dimen/_5sdp">
 
             <!-- Exercise 1: Arm Circles -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -85,6 +86,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
@@ -140,6 +143,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -195,6 +200,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -249,6 +256,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -303,6 +312,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
+
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -357,6 +368,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
+                    android:backgroundTint="@color/white"
                     app:cardElevation="4dp">
 
                     <LinearLayout
@@ -410,6 +422,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -457,7 +471,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center"                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -506,6 +521,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -553,6 +570,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+
                     android:layout_gravity="center"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
@@ -602,6 +621,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
@@ -650,6 +671,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp">
 
