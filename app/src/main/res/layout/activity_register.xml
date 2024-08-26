@@ -11,71 +11,94 @@
     tools:context=".RegisterActivity">
 
     <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_8sdp"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
         android:layout_gravity="center"
-        app:cardCornerRadius="20dp"
-        android:layout_height="200dp">
+        app:cardCornerRadius="8dp"
+        android:layout_height="@dimen/_100sdp">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:contentDescription="jimvim"
-            android:src="@drawable/about"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/titleimg"/>
 
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hustle for the muscle!!!"
-        android:fontFamily="@font/audiowide"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
         android:gravity="center"
-        android:textSize="30sp"/>
-
-    <EditText
-        android:id="@+id/mail"
-        android:background="@drawable/border"
-        android:layout_width="match_parent"
-        android:textColorHint="@color/black"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/audiowide"
-        android:hint="Email"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        />
-
-    <EditText
-        android:id="@+id/password"
-        android:textColorHint="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:hint="Password"
-        android:fontFamily="@font/audiowide"
-        android:password="true"
-        android:layout_margin="10dp"
-        android:padding="10dp"/>
-
-    <Button
-        android:id="@+id/continueBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="REGISTER"
-        android:textColor="@color/white"
-        android:fontFamily="@font/audiowide"
-        android:backgroundTint="@color/black"
-        android:layout_margin="10dp"/>
-
-    <TextView
-        android:id="@+id/move"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="DOUBLE MUSLCE WORKOUT"
         android:textColor="@color/black"
-        android:fontFamily="@font/audiowide"
-        android:text="Already have an account?Loing here!"
-        android:layout_margin="10dp"
-        />
+        android:textSize="@dimen/_16ssp" />
+
+    <LinearLayout
+        android:backgroundTint="#F1F0F0"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/border1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create account"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textSize="@dimen/_24ssp"/>
+
+
+        <EditText
+            android:id="@+id/mail"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:textColorHint="#5B5858"
+            android:background="@drawable/border1"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/_39sdp"
+            android:hint="Email"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:textColorHint="#5B5858"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_39sdp"
+            android:background="@drawable/border1"
+            android:hint="Password"
+            android:layout_marginHorizontal="@dimen/_200sdp"
+            android:password="true"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="@color/white"
+            android:fontFamily="@font/zen_dots"
+            android:backgroundTint="@color/black"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/move"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="HAVE AN ACCOUNT?"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
 </LinearLayout>

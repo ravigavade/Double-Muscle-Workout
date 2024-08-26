@@ -7,11 +7,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#C7C2C2"
+    android:background="#4F4F4F"
     tools:context=".fiveMinAbs">
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5-Minute Total Abs"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:paddingLeft="@dimen/_5sdp"/>
+
 
     <ScrollView
+        android:paddingVertical="@dimen/_5sdp"
         android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@drawable/border"
         android:layout_height="match_parent">
 
         <GridLayout
@@ -25,7 +39,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -80,7 +94,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -134,7 +148,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -188,7 +202,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -242,7 +256,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -296,7 +310,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView

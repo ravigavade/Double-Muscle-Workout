@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "812844935680",
-    "project_id": "jimvim-1aeb9",
-    "storage_bucket": "jimvim-1aeb9.appspot.com"
+    "project_number": "15955281118",
+    "project_id": "doublemuscle-db68e",
+    "storage_bucket": "doublemuscle-db68e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:812844935680:android:c4f497441af3ddaecb86e5",
+        "mobilesdk_app_id": "1:15955281118:android:b30ccdd4925671d8956e4f",
         "android_client_info": {
-          "package_name": "com.example.jimjam"
+          "package_name": "com.csaim.jimjam"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCNKAdwFOxA_wMqXO8uoCqYve-4dOR2onk"
+          "current_key": "AIzaSyClvWL98y-ALi2vXo6aKcIIu4OR9jBiUh0"
         }
       ],
       "services": {

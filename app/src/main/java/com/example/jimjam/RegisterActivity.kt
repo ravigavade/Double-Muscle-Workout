@@ -1,64 +1,65 @@
 package com.example.jimjam
 
-import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.jimjam.databinding.ActivityMainBinding
 import com.example.jimjam.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import android.content.ContentValues.TAG as TAG1
 
 class RegisterActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityRegisterBinding
+    private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
+
+    companion object {
+        private const val TAG = "RegisterActivity"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityRegisterBinding.inflate(layoutInflater)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = Firebase.auth
 
         binding.continueBtn.setOnClickListener {
-            auth.createUserWithEmailAndPassword(binding.mail.getText().toString().trim() , binding.password.getText().toString().trim())
+            val email = binding.mail.text.toString().trim()
+            val password = binding.password.text.toString().trim()
+
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(baseContext, "Email and Password are required.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        Log.d(ContentValues.TAG, "createUserWithEmail:success")
-                        val user = auth.currentUser
-                        startActivity(Intent(this,MainActivity::class.java))
+                        Log.d(TAG, "createUserWithEmail:success")
+                        // Redirect to LoginAvitivity after successful registration
+                        startActivity(Intent(this, LoginAvitivity::class.java))
+                        finish() // Ensure the RegisterActivity is finished
                     } else {
-                        // If sign in fails, display a message to the user.
-                        Log.w(ContentValues.TAG, "createUserWithEmail:failure", task.exception)
-                        Toast.makeText(
-                            baseContext,
-                            "Authentication failed.",
-                            Toast.LENGTH_SHORT,
-                        ).show()
+                        Log.w(TAG, "createUserWithEmail:failure", task.exception)
+                        Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
 
-        binding.move.setOnClickListener{
-            startActivity(Intent(this,LoginAvitivity::class.java))
-            finish()
+        binding.move.setOnClickListener {
+            startActivity(Intent(this, LoginAvitivity::class.java))
+            finish() // Ensure the RegisterActivity is finished
         }
-
-
     }
-    public override fun onStart() {
+
+    override fun onStart() {
         super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
+        // Optionally, you can check if the user is already logged in
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            startActivity(Intent(this,MainActivity::class.java))
+            // You can add logic here if needed, but typically this should be handled in LoginAvitivity or MainActivity
         }
     }
 }

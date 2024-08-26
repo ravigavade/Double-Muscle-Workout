@@ -5,67 +5,82 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#000000"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginAvitivity">
 
+
+
     <androidx.cardview.widget.CardView
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_width="@dimen/_100sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="8dp"
         android:layout_height="@dimen/_100sdp">
 
         <ImageView
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_100sdp"
-            android:layout_gravity="center"
-            android:contentDescription="jimvim"
-            android:src="@drawable/about"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/titleimg"/>
 
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:fontFamily="@font/zen_dots"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
         android:gravity="center"
-        android:text="JimVim"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_28ssp" />
+        android:text="DOUBLE MUSLCE WORKOUT"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp" />
 
     <LinearLayout
-        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="#F1F0F0"
+        android:layout_margin="@dimen/_8sdp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:background="@drawable/border1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textSize="@dimen/_24ssp"/>
 
 
     <EditText
         android:id="@+id/mail"
-        android:background="@drawable/border"
+        android:singleLine="true"
         android:layout_width="match_parent"
         android:textColorHint="#5B5858"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/border1"
+        android:textColor="@color/black"
         android:layout_height="@dimen/_39sdp"
         android:hint="Email"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/_10sdp"
         android:padding="10dp"
         />
 
     <EditText
         android:id="@+id/password"
         android:textColorHint="#5B5858"
+        android:singleLine="true"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_39sdp"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:background="@drawable/border1"
         android:hint="Password"
         android:layout_marginHorizontal="@dimen/_200sdp"
         android:password="true"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/_10sdp"
         android:padding="10dp"/>
 
     <Button
@@ -84,8 +99,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="Don't have an account?Register here!"
-            android:textColor="@color/white" />
+            android:text="New to DOUBLE MUSCLE WORKOUT?"
+            android:textColor="@color/black" />
     </LinearLayout>
 
 

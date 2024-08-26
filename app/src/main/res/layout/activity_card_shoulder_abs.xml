@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#939394"
+    android:layout_height="match_parent"
+    tools:context=".CardShoulderABS">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shoulderchestcard"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="SHOULDERS AND ABS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:paddingVertical="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_2sdp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/shoulders1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DUMBBELL PRESS"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 10 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/shoulders2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LATERAL RAISE"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 6-8 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/shoulders3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BARBEL STANDING PRESS"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 10 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/triceps1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DUMBBELL TRICEPS KICKBACK"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 10 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/triceps2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CABLE PUSHDOWN"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 10 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:layout_height="@dimen/_100sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/tricpes3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BENCH DIPS"
+                            android:textSize="@dimen/_18ssp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_20sdp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Sets, 8-10 Reps"
+                            android:fontFamily="@font/poppins"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

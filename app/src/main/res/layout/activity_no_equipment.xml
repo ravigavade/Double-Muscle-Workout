@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,8 +10,22 @@
     android:background="#7D7979"
     tools:context=".noEquipment">
 
-    <ScrollView
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No-equipment full-body workout"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:paddingLeft="@dimen/_5sdp"/>
+
+    <ScrollView
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:paddingVertical="@dimen/_5sdp"
         android:layout_height="match_parent">
 
         <GridLayout
@@ -18,7 +33,7 @@
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:orientation="horizontal"
-            android:padding="@dimen/_5sdp">
+            >
 
             <!-- Exercise 1: Arm Circles -->
             <LinearLayout
@@ -80,7 +95,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -136,7 +151,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -192,7 +207,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -248,7 +263,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -304,7 +319,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -360,7 +375,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -415,7 +430,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -465,7 +480,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -514,7 +529,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -564,7 +579,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -614,7 +629,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -664,7 +679,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -712,4 +727,4 @@
         </GridLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

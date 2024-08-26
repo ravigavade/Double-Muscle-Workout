@@ -16,7 +16,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/dm_serif_text"
         android:paddingHorizontal="@dimen/_5sdp"
-        android:text="BicepBoss- the ultimate biceps"
+        android:text="DOUBLE MUSCLE WORKOUT"
         android:textColor="@color/black"
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold" />
@@ -32,22 +32,13 @@
             app:cardCornerRadius="8dp"
             android:layout_height="@dimen/_80sdp">
 
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/titleimg" />
-<!--            <Button-->
-<!--                android:id="@+id/logoutBtn"-->
-<!--                android:layout_gravity="bottom"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="LOGOUT"-->
-<!--                android:layout_marginHorizontal="40dp"-->
-<!--                android:backgroundTint="@color/white"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:fontFamily="@font/dm_serif_text"-->
-<!--                />-->
+
 
         </androidx.cardview.widget.CardView>
         <TextView
@@ -60,24 +51,43 @@
             android:textSize="@dimen/_18ssp"
             android:layout_gravity="bottom"
             android:fontFamily="@font/dm_serif_text" />
-    </androidx.cardview.widget.CardView>
 
-    <TextView
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_serif_text"
-        android:textSize="@dimen/_13ssp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="@dimen/_5sdp"
-        android:text="4x Challenge"/>
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_serif_text"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="4x Challenge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_8ssp"
+            android:text="(workout tracker coming soon)"/>
+
+    </LinearLayout>
+
+
 
     <GridLayout
+        android:background="@drawable/border1"
             android:layout_width="@dimen/_190sdp"
             android:layout_height="@dimen/_80sdp"
             android:layout_marginHorizontal="@dimen/_5sdp"
-            android:columnCount="3"
+            android:columnCount="2"
             android:rowCount="1"
-            android:padding="@dimen/_5sdp">
+        android:backgroundTint="@color/white"
+            android:padding="@dimen/_2sdp"
+        >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/noEbtn"
@@ -86,7 +96,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_1sdp"
                 app:cardCornerRadius="8dp">
 
                     <pl.droidsonroids.gif.GifImageView
@@ -139,64 +149,11 @@
                     android:text="5 mins total abs"
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins" />
+
             </androidx.cardview.widget.CardView>
 
 
-        <!--            <androidx.cardview.widget.CardView-->
-<!--                android:id="@+id/doubleMusclebtn"-->
-<!--                android:layout_width="@dimen/_1sdp"-->
-<!--                android:layout_height="@dimen/_1sdp"-->
-<!--                android:layout_margin="10dp"-->
-<!--                android:layout_columnWeight="1"-->
-<!--                android:layout_rowWeight="1"-->
-<!--                app:cardCornerRadius="16dp">-->
 
-<!--                <pl.droidsonroids.gif.GifImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:src="@drawable/dm" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="bottom"-->
-<!--                    android:textSize="@dimen/_12ssp"-->
-
-<!--                    android:gravity="center"-->
-<!--                    android:paddingHorizontal="9dp"-->
-<!--                    android:text="Double muscle"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:fontFamily="@font/poppins" />-->
-<!--            </androidx.cardview.widget.CardView>-->
-
-<!--            <androidx.cardview.widget.CardView-->
-<!--                android:id="@+id/aboutbtn"-->
-<!--                android:layout_width="@dimen/_1sdp"-->
-<!--                android:layout_height="@dimen/_1sdp"-->
-<!--                android:layout_margin="10dp"-->
-<!--                android:layout_columnWeight="1"-->
-<!--                android:layout_rowWeight="1"-->
-<!--                app:cardCornerRadius="16dp">-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:contentDescription="TODO"-->
-<!--                    android:src="@drawable/about" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="bottom"-->
-<!--                    android:gravity="center"-->
-<!--                    android:paddingHorizontal="9dp"-->
-<!--                    android:textSize="@dimen/_12ssp"-->
-
-<!--                    android:text="About"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:fontFamily="@font/poppins" />-->
-
-<!--            </androidx.cardview.widget.CardView>-->
 
     </GridLayout>
 
@@ -216,9 +173,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_8ssp"
-            android:text="Intermediate N Advanced (comming soon)"
+            android:text="Intermediate N Advanced (coming soon)"
             android:layout_marginRight="@dimen/_8sdp"
             android:fontFamily="@font/poppins"/>
+        <TextView
+            android:id="@+id/logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/border"
+            android:backgroundTint="#77767B"
+            android:paddingHorizontal="@dimen/_9sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:fontFamily="@font/poppins"/>
+
     </LinearLayout>
 
         <LinearLayout
@@ -242,7 +213,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/b1"
+                        android:src="@drawable/shoulderchestcard"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -261,6 +232,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/ChestAndTricepsCard"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 app:cardCornerRadius="@dimen/_8sdp"
@@ -276,7 +248,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:src="@drawable/chestcard"/>
+                        android:src="@drawable/chestandtricepcard"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
                 <TextView
                     android:layout_width="wrap_content"
