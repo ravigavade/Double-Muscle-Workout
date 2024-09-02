@@ -10,20 +10,12 @@
     android:background="#FDFDFD"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:fontFamily="@font/dm_serif_text"
-        android:paddingHorizontal="@dimen/_5sdp"
-        android:text="DOUBLE MUSCLE WORKOUT"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_20ssp"
-        android:textStyle="bold" />
+
 
     <androidx.cardview.widget.CardView
         android:backgroundTint="@color/white"
         android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginHorizontal="@dimen/_5sdp"
         app:cardCornerRadius="8dp"
         android:layout_height="@dimen/_110sdp">
@@ -38,24 +30,40 @@
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/titleimg" />
+            <TextView
+                android:id="@+id/logoutbtn"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginHorizontal="@dimen/_12ssp"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="bottom"
+                android:fontFamily="@font/poppins"/>
 
 
         </androidx.cardview.widget.CardView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingHorizontal="@dimen/_9sdp"
-            android:text="Hustle for the muscle!"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"
             android:layout_gravity="bottom"
-            android:fontFamily="@font/dm_serif_text" />
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="DOUBLE MUSCLE WORKOUT"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
 
 
     </androidx.cardview.widget.CardView>
     <LinearLayout
-        android:orientation="horizontal"
+        android:background="@drawable/border1"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -67,32 +75,14 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:text="4x Challenge"/>
 
-        <TextView
-            android:id="@+id/progressTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:paddingHorizontal="@dimen/_5sdp"
-            android:text="Progress: 0%"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_10ssp"
-            android:textStyle="bold"
-            />
-
-    </LinearLayout>
-
-
-
     <GridLayout
-        android:background="@drawable/border1"
             android:layout_width="@dimen/_190sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
             android:layout_height="@dimen/_80sdp"
             android:layout_marginHorizontal="@dimen/_5sdp"
             android:columnCount="2"
             android:rowCount="1"
-        android:backgroundTint="@color/white"
-            android:padding="@dimen/_2sdp"
-        >
+            android:padding="@dimen/_2sdp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/noEbtn"
@@ -106,6 +96,7 @@
 
                     <pl.droidsonroids.gif.GifImageView
                         android:layout_width="match_parent"
+                        android:background="@drawable/border1"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/_2sdp"
                         android:src="@drawable/moe" />
@@ -137,6 +128,7 @@
                 app:cardCornerRadius="8dp">
 
                 <pl.droidsonroids.gif.GifImageView
+                android:background="@drawable/border1"
                     android:layout_width="match_parent"
                     android:layout_margin="@dimen/_2sdp"
                     android:layout_height="match_parent"
@@ -162,6 +154,8 @@
 
     </GridLayout>
 
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginLeft="@dimen/_5sdp"
@@ -181,19 +175,7 @@
             android:text="Intermediate N Advanced (coming soon)"
             android:layout_marginRight="@dimen/_8sdp"
             android:fontFamily="@font/poppins"/>
-        <TextView
-            android:id="@+id/logoutbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LOGOUT"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:background="@drawable/border"
-            android:backgroundTint="#77767B"
-            android:paddingHorizontal="@dimen/_9sdp"
-            android:layout_gravity="end"
-            android:layout_marginRight="@dimen/_8sdp"
-            android:fontFamily="@font/poppins"/>
+
 
     </LinearLayout>
 
@@ -202,6 +184,47 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:weightSum="3">
+
+            <LinearLayout
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Progress: 0%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginHorizontal="@dimen/_9sdp"
+
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/resetProgressButton"
+                        android:layout_width="wrap_content"
+                        android:paddingHorizontal="@dimen/_6sdp"
+                        android:layout_height="wrap_content"
+                        android:text="RESET PROGRESS"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/ShouldersAndAbsCard"
@@ -231,6 +254,7 @@
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins"
                     android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
                     android:layout_margin="@dimen/_5sdp"
                     />
 
@@ -261,6 +285,7 @@
                     android:text="CHEST AND TRICEP"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins"
+                    android:textSize="@dimen/_14ssp"
                     android:textStyle="bold"
                     android:layout_margin="@dimen/_5sdp"
                     />
@@ -294,15 +319,13 @@
                     android:fontFamily="@font/poppins"
                     android:textStyle="bold"
                     android:layout_margin="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+
                     />
 
             </androidx.cardview.widget.CardView>
 
+
         </LinearLayout>
-
-
-
-
-
 
 </LinearLayout>

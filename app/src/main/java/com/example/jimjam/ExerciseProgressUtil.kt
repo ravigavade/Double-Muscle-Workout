@@ -19,4 +19,11 @@ object ExerciseProgressUtil {
         completedExercises.add(exerciseId)
         prefs.edit().putStringSet(COMPLETED_EXERCISES_KEY, completedExercises.map { it.toString() }.toSet()).apply()
     }
+
+    fun resetProgress(context: Context) {
+        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        prefs.edit().clear().apply()
+    }
+
+
 }

@@ -17,6 +17,9 @@ class CardShoulderABS : AppCompatActivity() {
         binding = ActivityCardShoulderAbsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Toast.makeText(this, "Tap on exercise to track your progress", Toast.LENGTH_SHORT).show()
+
+
         setupCardClickListener(binding.card1)
         setupCardClickListener(binding.card2)
         setupCardClickListener(binding.card3)

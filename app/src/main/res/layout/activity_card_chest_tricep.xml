@@ -79,6 +79,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
                             android:text="2 Sets, 8-10 Reps"
                             android:fontFamily="@font/poppins"
                             />
@@ -117,6 +119,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 10 Reps"
+                            android:textColor="@color/black"
+
                             android:fontFamily="@font/poppins"
                             />
                     </LinearLayout>
@@ -154,6 +158,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 10 Reps"
+                            android:textColor="@color/black"
+
                             android:fontFamily="@font/poppins"
                             />
                     </LinearLayout>
@@ -192,6 +198,8 @@
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 10 Reps"
                             android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -229,6 +237,8 @@
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 10 Reps"
                             android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -267,6 +277,7 @@
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 8-10 Reps"
                             android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
                             />
                     </LinearLayout>
                 </LinearLayout>

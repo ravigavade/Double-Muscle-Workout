@@ -29,10 +29,9 @@
 
     <ScrollView
         android:scrollbars="none"
-        android:paddingVertical="@dimen/_5sdp"
         android:background="@drawable/border"
         android:layout_width="match_parent"
-        android:padding="@dimen/_2sdp"
+        android:paddingVertical="@dimen/_2sdp"
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -71,6 +70,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 10 Reps"
+                            android:textColor="@color/black"
                             android:fontFamily="@font/poppins"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -105,6 +105,7 @@
                             android:layout_marginTop="@dimen/_20sdp"/>
                         <TextView
                             android:layout_width="wrap_content"
+                            android:textColor="@color/black"
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 6-8 Reps"
                             android:fontFamily="@font/poppins"/>
@@ -142,6 +143,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
                             android:text="3 Sets, 10 Reps"
                             android:fontFamily="@font/poppins"/>
                     </LinearLayout>
@@ -178,6 +181,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
                             android:text="3 Sets, 10 Reps"
                             android:fontFamily="@font/poppins"/>
                     </LinearLayout>
@@ -214,6 +219,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
                             android:text="3 Sets, 10 Reps"
                             android:fontFamily="@font/poppins"/>
                     </LinearLayout>
@@ -251,6 +258,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3 Sets, 8-10 Reps"
+                            android:textColor="@color/black"
+
                             android:fontFamily="@font/poppins"/>
                     </LinearLayout>
                 </LinearLayout>

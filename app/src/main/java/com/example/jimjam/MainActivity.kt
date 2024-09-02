@@ -64,6 +64,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Sign out failed", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.resetProgressButton.setOnClickListener {
+            ExerciseProgressUtil.resetProgress(this)
+            updateProgress()
+            Toast.makeText(this, "Progress has been reset", Toast.LENGTH_SHORT).show()
+        }
+
     }
     override fun onResume() {
         super.onResume()
@@ -74,6 +80,7 @@ class MainActivity : AppCompatActivity() {
         val completedExercises = ExerciseProgressUtil.getCompletedExercises(this)
         val progressPercentage = (completedExercises.size * 100) / totalExercises
         binding.progressTextView.text = "Progress: $progressPercentage%"
+
     }
 
 
